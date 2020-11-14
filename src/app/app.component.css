@@ -1,0 +1,114 @@
+.container {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    transition: 3s ease;
+}
+
+.weather-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: center;
+    font-family: 'Merienda';
+    color: aliceblue;
+}
+
+.weather {
+    padding: 0 5% 0 5%;
+    height: 20%;
+    margin: 0 0 10% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
+}
+
+.city-details {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-name {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 37px;
+    text-align: justify;
+}
+
+.nav {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    color: aliceblue;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar fa-icon {
+    margin-left: 15px;
+}
+
+.search-bar input {
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    color: black;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.seach-bar input[type="text"]::placeholder {
+    color: aliceblue;
+}
+
+.details {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
