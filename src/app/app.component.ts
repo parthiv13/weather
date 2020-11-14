@@ -46,10 +46,10 @@ export class AppComponent {
   //TODO: create response Object
   getTemp() {
     this.weatherService.getTemperature(this.cityName).subscribe(w => {
-      if (w.main === undefined) {
-        this.weatherService.getTemperature("Visakhapatnam").subscribe(weather => this.weather = weather.main.temp)
+      if (w["main"] === undefined) {
+        this.weatherService.getTemperature("Visakhapatnam").subscribe(weather => this.weather = weather["main"].temp)
       } else {
-        this.weather = w.main.temp;
+        this.weather = w["main"].temp;
         this.city = this.cityName;
         this.cityName = '';
       }
