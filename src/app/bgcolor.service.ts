@@ -15,8 +15,6 @@ export class BgcolorService {
   sunset: string[] = ["#480F56", "#CC728A"];
   night: string[] = ["#19164F", "#6A4A86"];
 
-  
-
   getBgColor(): string[] {
     let hourOfTheDay = new Date().getHours();
     if (hourOfTheDay < 6) {
